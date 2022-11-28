@@ -7,6 +7,7 @@ namespace banco
 {
     class BancoABC
     {
+        /*
         private double appCli;
 
         public double AppCli
@@ -14,6 +15,7 @@ namespace banco
             get { return appCli; }
             set { appCli = value; }
         }
+        */
         private double valIa;
 
         public double ValIa
@@ -21,12 +23,11 @@ namespace banco
             get { return valIa; }
             set { valIa = value; }
         }
-        private double ValAcm;
+        private double valAcm;
 
-        public double ValAcm1
-        {
-            get { return ValAcm; }
-            set { ValAcm = value; }
+        public double ValAcm{
+            get {return valAcm;}
+            set{valAcm = value;}
         }
         private double tsApl;
 
@@ -35,32 +36,38 @@ namespace banco
             get { return tsApl; }
             set { tsApl = value; }
         }
-        public double VsResg()
-        {
-        if ( AppCli == 1 )
-        {
-            return ((ValIa)+(ValIa*0.078))+((ValAcm*0.078)*TsApl);
-        }
-        if(AppCli = 2 && TsApl >= 24)
-        {
-            return ((ValIa)+(ValIa*0.078))+((ValAcm*0.097)*TsApl);
-        }
-        if(AppCli = 3 && TsApl = 6)
-        {
-            return ((ValIa)+(ValIa*0.085))+((ValAcm*0.097)*TsApl);
-        }
-        if(AppCli = 4 && TsApl >= 6 && TsApl < 12 )
-        {
-            return ((ValIa)+((ValAcm)*TsApl))/2;
-        }
-        if(AppCli = 5 && TsApl >= 12 )
-        {
-            return ((ValIa)+(ValIa*0.090))+((ValAcm*0.097)*TsApl);
-        }
-        else
-        {
-            return 0 ;
-        }
+        public double VsResg(string g1)
+        {   
+            Console.WriteLine("valor do G1 = "+ g1);
+            
+            if (g1 == "1")
+            {
+                return (ValIa)+(ValIa*0.078)+(ValAcm*0.078)*TsApl;
+                Console.WriteLine($"Chegou no IF do Vsresg G1");
+                
+            } else if(g1 == "2" && TsApl < 24)
+            {
+                Console.WriteLine($"Ainda não tem 24 meses! Não é possível resgatar!");
+                return 0;
+            }else if(g1 == "2" && TsApl >= 24)
+            {
+                return ((ValIa)+(ValIa*0.078))+((ValAcm*0.097)*TsApl);
+            }else if(g1 == "3" && TsApl == 6)
+            {
+                return ((ValIa)+(ValIa*0.085))+((ValAcm*0.097)*TsApl);
+            }else if(g1 == "4" && TsApl >= 6 && TsApl < 12 )
+            {
+                return ((ValIa)+((ValAcm)*TsApl))/2;
+            }else if(g1 == "5" && TsApl >= 12 )
+            {
+                return ((ValIa)+(ValIa*0.090))+((ValAcm*0.097)*TsApl);
+            }
+            else
+            {
+                System.Console.WriteLine("Algo de errado não deu certo!!!");
+                return 0;
+            }
+            
         }
         
     }
