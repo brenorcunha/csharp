@@ -1,0 +1,7 @@
+C:\Users\Beto\csharp\World.Cup.Simulation\obj\Debug\net6.0\World.Cup.Simulation.csproj.AssemblyReference.cache
+C:\Users\Beto\csharp\World.Cup.Simulation\obj\Debug\net6.0\World.Cup.Simulation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Beto\csharp\World.Cup.Simulation\obj\Debug\net6.0\World.Cup.Simulation.AssemblyInfoInputs.cache
+C:\Users\Beto\csharp\World.Cup.Simulation\obj\Debug\net6.0\World.Cup.Simulation.AssemblyInfo.cs
+C:\Users\Beto\csharp\World.Cup.Simulation\obj\Debug\net6.0\World.Cup.Simulation.csproj.CoreCompileInputs.cache
+C:\Users\Beto\csharp\World.Cup.Simulation\obj\Debug\net6.0\World.Cup.Simulation.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Beto\csharp\World.Cup.Simulation\obj\Debug\net6.0\World.Cup.Simulation.MvcApplicationPartsAssemblyInfo.cache
