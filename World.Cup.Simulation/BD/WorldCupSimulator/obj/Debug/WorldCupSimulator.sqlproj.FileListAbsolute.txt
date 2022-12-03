@@ -1,0 +1,12 @@
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\bin\Debug\WorldCupSimulator.dacpac
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\bin\Debug\WorldCupSimulator.dll
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\bin\Debug\WorldCupSimulator.pdb
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\bin\Debug\master.dacpac
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\obj\Debug\WorldCupSimulator.sqlproj.AssemblyReference.cache
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\obj\Debug\Model.xml
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\obj\Debug\refactor.xml
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\obj\Debug\postdeploy.sql
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\obj\Debug\predeploy.sql
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\obj\Debug\WorldCupSimulator.sqlproj.CopyComplete
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\obj\Debug\WorldCupSimulator.dll
+c:\Users\Beto\csharp\World.Cup.Simulation\BD\WorldCupSimulator\obj\Debug\WorldCupSimulator.pdb

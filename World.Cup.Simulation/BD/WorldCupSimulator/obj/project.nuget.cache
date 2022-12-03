@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MGrKVauwapib4RTFn/owPgqyVjic81FTGel+oE3CRxklzmgPpbcAA0h+E9eZsdD2LfBSA1Mixvi/KC8hc9aCPQ==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Beto\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\Beto\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net46\\1.0.0\\microsoft.netframework.referenceassemblies.net46.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

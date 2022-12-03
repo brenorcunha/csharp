@@ -1,0 +1,45 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj": {}
+  },
+  "projects": {
+    "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj",
+        "projectName": "WorldCupSimulator",
+        "projectPath": "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj",
+        "packagesPath": "C:\\Users\\Beto\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Beto\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

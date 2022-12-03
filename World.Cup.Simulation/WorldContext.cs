@@ -6,16 +6,15 @@ namespace World.Cup.Simulation
         public WorldContext(DbContextOptions options)    
             : base(options)
         {
-            //
         }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
-        IConfiguration configuration = (IConfiguration)new ConfigurationBuilder()
+        IConfiguration configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
                 .Build();
         
-        //optionsBuilder.UseSqlServer(configuration.GetConnectionString("ServerConnection"));
+        optionsBuilder.UseSqlServer(configuration.GetConnectionString("ServerConnection"));
         }
-        public DbSet<Team> Teams{ get; set; }    
+        public DbSet<Team> Teams { get; set; }
     }
 }
