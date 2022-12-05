@@ -16,5 +16,6 @@ namespace World.Cup.Simulation
         optionsBuilder.UseSqlServer(configuration.GetConnectionString("ServerConnection"));
         }
         public DbSet<Team> Teams { get; set; }
+        
     }
 }

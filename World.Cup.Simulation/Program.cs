@@ -55,11 +55,11 @@ app.MapPost("/api/teams",async(World.Cup.Simulation.WorldContext context, Team t
 app.MapPut("/api/teams/{id}", async(World.Cup.Simulation.WorldContext context, Team team)=>
 {
     var dbTeam = await context.Teams.FindAsync(team.Id);
-    if(dbTeam== null) return Results.NotFound();
+    if(dbTeam==null) return Results.NotFound();
 
     dbTeam.Name = team.Name;
     dbTeam.Img = team.Img;
-
+    dbTeam.Group = team.Group;
     context.Teams.Update(dbTeam);
     await context.SaveChangesAsync();
 
