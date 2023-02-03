@@ -10,7 +10,7 @@ using World.Cup.Simulation;
 
 namespace World.Cup.Simulation.Migrations
 {
-    [DbContext(typeof(WorldContext))]
+    [DbContext(typeof(WorldCupContext))]
     partial class WorldContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

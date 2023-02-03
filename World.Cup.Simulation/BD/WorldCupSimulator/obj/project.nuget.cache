@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MGrKVauwapib4RTFn/owPgqyVjic81FTGel+oE3CRxklzmgPpbcAA0h+E9eZsdD2LfBSA1Mixvi/KC8hc9aCPQ==",
+  "dgSpecHash": "RS6N13cc6AA8MIDRAWCi9s2KXuMwRxmq4TrzjfqJj5N0Bd2sqsxRvW5e+Ypuf2dMC1TsHHxmmQWotLno8EsAtA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj",
+  "projectFilePath": "c:\\Users\\breno\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Beto\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
-    "C:\\Users\\Beto\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net46\\1.0.0\\microsoft.netframework.referenceassemblies.net46.1.0.0.nupkg.sha512"
+    "C:\\Users\\breno\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\breno\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net46\\1.0.0\\microsoft.netframework.referenceassemblies.net46.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

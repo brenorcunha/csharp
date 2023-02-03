@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj": {}
+    "c:\\Users\\breno\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj": {}
   },
   "projects": {
-    "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj": {
+    "c:\\Users\\breno\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj",
+        "projectUniqueName": "c:\\Users\\breno\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj",
         "projectName": "WorldCupSimulator",
-        "projectPath": "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj",
-        "packagesPath": "C:\\Users\\Beto\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Beto\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\obj\\",
+        "projectPath": "c:\\Users\\breno\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\WorldCupSimulator.sqlproj",
+        "packagesPath": "C:\\Users\\breno\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\breno\\csharp\\World.Cup.Simulation\\BD\\WorldCupSimulator\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\Beto\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\breno\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net46"

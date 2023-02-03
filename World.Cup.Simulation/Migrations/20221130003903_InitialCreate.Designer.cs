@@ -11,7 +11,7 @@ using World.Cup.Simulation;
 
 namespace World.Cup.Simulation.Migrations
 {
-    [DbContext(typeof(WorldContext))]
+    [DbContext(typeof(WorldCupContext))]
     [Migration("20221130003903_InitialCreate")]
     partial class InitialCreate
     {

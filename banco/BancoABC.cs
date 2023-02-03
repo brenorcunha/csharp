@@ -7,58 +7,65 @@ namespace banco
 {
     class BancoABC
     {
-        private double appCli;
+        private static Int16 appCli;
 
-        public double AppCli
+        public static Int16 AppCli
         {
             get { return appCli; }
             set { appCli = value; }
         }
-        private double valIa;
+        private static double valIa;
 
-        public double ValIa
+        public static double ValIa
         {
             get { return valIa; }
             set { valIa = value; }
         }
-        private double ValAcm;
+        private static double valAcm;
 
-        public double ValAcm1
+        public static double ValAcm
         {
-            get { return ValAcm; }
-            set { ValAcm = value; }
+            get { return valAcm; }
+            set { valAcm = value; }
         }
-        private double tsApl;
+        private static Int16 tsApl;
 
-        public double TsApl
+        public static Int16 TsApl
         {
             get { return tsApl; }
             set { tsApl = value; }
         }
-        public double VsResg()
+        bool v1 = (appCli == 2);
+        bool v2 = (tsApl >= 24);
+        bool v3 = (appCli == 3);
+        bool v4 = (tsApl == 6);
+        bool v5 =(appCli == 4);
+        bool v6 = (tsApl >= 6);
+        bool v7 =(tsApl < 12);
+        bool v8 = (appCli == 5);
+        bool v9 = (tsApl >= 12);
+
+        public double VsResg(double valIa, double valAcm, Int16 tsApl, Int16 appCli)
         {
-        if ( AppCli == 1 )
+        if ( appCli == 1 )
         {
-            return ((ValIa)+(ValIa*0.078))+((ValAcm*0.078)*TsApl);
-        }
-        if(AppCli = 2 && TsApl >= 24)
+            return ((ValIa)+(ValIa*0.078))+((ValAcm*0.078)*tsApl);
+        } else if(v1 && v2)
         {
-            return ((ValIa)+(ValIa*0.078))+((ValAcm*0.097)*TsApl);
-        }
-        if(AppCli = 3 && TsApl = 6)
+            return ((ValIa)+(ValIa*0.078))+((ValAcm*0.097)*tsApl);
+        } else if(v3 && v4)
         {
-            return ((ValIa)+(ValIa*0.085))+((ValAcm*0.097)*TsApl);
-        }
-        if(AppCli = 4 && TsApl >= 6 && TsApl < 12 )
+            return ((ValIa)+(ValIa*0.085))+((ValAcm*0.097)*tsApl);
+        } else if(v5 && v6 && v7)
         {
-            return ((ValIa)+((ValAcm)*TsApl))/2;
-        }
-        if(AppCli = 5 && TsApl >= 12 )
+            return ((ValIa)+((ValAcm)*tsApl))/2;
+        } else if(v8 && v9)
         {
-            return ((ValIa)+(ValIa*0.090))+((ValAcm*0.097)*TsApl);
+            return ((ValIa)+(ValIa*0.090))+((ValAcm*0.097)*tsApl);
         }
         else
         {
+            Console.WriteLine("Algum erro ocorreu. Provavelmente ainda não está em tempo para resgatar o valor!");
             return 0 ;
         }
         }

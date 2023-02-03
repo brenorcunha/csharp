@@ -12,8 +12,8 @@ using World.Cup.Simulation;
 namespace World.Cup.Simulation.Migrations
 {
     [DbContext(typeof(WorldCupContext))]
-    [Migration("20221205131425_updatingGroups")]
-    partial class updatingGroups
+    [Migration("20230203163553_AddTeamsScript")]
+    partial class AddTeamsScript
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

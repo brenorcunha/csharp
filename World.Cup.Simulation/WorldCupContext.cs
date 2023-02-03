@@ -2,11 +2,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace World.Cup.Simulation
 {
-    public class WorldContext : DbContext{
-        public WorldContext(DbContextOptions options)    
-            : base(options)
-        {
-        }
+    public class WorldCupContext : DbContext{
+        public WorldCupContext(DbContextOptions options)    
+            : base(options) { }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
         IConfiguration configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())

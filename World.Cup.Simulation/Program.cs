@@ -1,11 +1,12 @@
 using Microsoft.EntityFrameworkCore;
+using World.Cup.Simulation;
 
 var builder = WebApplication.CreateBuilder(args);
 //O Angular costuma causar um erro nas páginas, não permitindo que outras apps façam requests na API, esse código (+ o abaixo) resolve isso: 
 builder.Services.AddCors();
 
 // Add services to the container.
-builder.Services.AddDbContext<World.Cup.Simulation.WorldContext>(options =>
+builder.Services.AddDbContext<WorldCupContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ServerConnection")));
 
 builder.Services.AddControllers();
@@ -24,7 +25,7 @@ app.UseCors(p => p
     .AllowAnyOrigin()
     .AllowAnyMethod());
 
-app.MapGet("/api/teams/groups", async (World.Cup.Simulation.WorldContext context) =>
+app.MapGet("/api/teams/groups", async (WorldCupContext context) =>
 {
     var teams = await context.Teams.ToListAsync();
     var groups = teams.GroupBy(p => p.Group)
@@ -34,17 +35,17 @@ app.MapGet("/api/teams/groups", async (World.Cup.Simulation.WorldContext context
     return Results.Ok(groups);
 });
 
-app.MapGet("/api/teams/{id}",async(World.Cup.Simulation.WorldContext context, Guid id) => 
+app.MapGet("/api/teams/{id}",async(WorldCupContext context, Guid id) => 
 {
     var team = await context.Teams.FindAsync(id);
     return Results.Ok(team);
 });
-app.MapGet("/api/teams",async (World.Cup.Simulation.WorldContext context) =>
+app.MapGet("/api/teams",async (WorldCupContext context) =>
 {
     var teams = await context.Teams.ToListAsync();
     return Results.Ok(teams);
 });
-app.MapPost("/api/teams",async(World.Cup.Simulation.WorldContext context, Team team)=>
+app.MapPost("/api/teams",async(WorldCupContext context, Team team)=>
 {
     //await e assync porque estamos trabalhando com contexto assincrono.
     await context.Teams.AddAsync(team);
@@ -52,7 +53,7 @@ app.MapPost("/api/teams",async(World.Cup.Simulation.WorldContext context, Team t
     return Results.Ok(team);
 });
 
-app.MapPut("/api/teams/{id}", async(World.Cup.Simulation.WorldContext context, Team team)=>
+app.MapPut("/api/teams/{id}", async(WorldCupContext context, Team team)=>
 {
     var dbTeam = await context.Teams.FindAsync(team.Id);
     if(dbTeam==null) return Results.NotFound();
@@ -66,7 +67,7 @@ app.MapPut("/api/teams/{id}", async(World.Cup.Simulation.WorldContext context, T
     return Results.Ok(dbTeam);
 });
 
-app.MapDelete("/api/teams/{id}", async (World.Cup.Simulation.WorldContext context, Guid id)=>
+app.MapDelete("/api/teams/{id}", async (WorldCupContext context, Guid id)=>
 {
     var dbTeam = await context.Teams.FindAsync(id);
     if(dbTeam!=null)

@@ -27,7 +27,6 @@ namespace banco
         {
             return Saldo * 0.1;
 
-
         }
         
      }
