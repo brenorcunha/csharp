@@ -1,0 +1,5 @@
+C:\Users\breno\csharp\Calculadora\obj\Debug\netstandard2.0\Calculadora.csproj.AssemblyReference.cache
+C:\Users\breno\csharp\Calculadora\obj\Debug\netstandard2.0\Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\breno\csharp\Calculadora\obj\Debug\netstandard2.0\Calculadora.AssemblyInfoInputs.cache
+C:\Users\breno\csharp\Calculadora\obj\Debug\netstandard2.0\Calculadora.AssemblyInfo.cs
+C:\Users\breno\csharp\Calculadora\obj\Debug\netstandard2.0\Calculadora.csproj.CoreCompileInputs.cache
